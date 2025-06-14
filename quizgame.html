@@ -4,16 +4,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <title>Nina's Fantasy</title>
+        <title>Quiz - Play</title>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/app.css">
+        <link rel="stylesheet" href="./assets/css/quizgame.css">
         <link rel="icon" href="./assets/images/TabLogo.png">
     </head>
     <body>
-        <div class="banner">
+        <div class="thorax">
             <nav class="navbar">
-                <!--<a class="title-logo" href="index.html">
-                    Nina's Fantasy
-                </a>-->
                 <a class="title-logo" href="index.html"><img src="./assets/images/logoNoBack.png" class="logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,17 +28,8 @@
                 </button>
             </nav>
             <div class="enjp">
-                <a href="./jp/index.html">English/日本語</a>
+                <a href="./jp/about.html"><u>English/日本語</u></a>
             </div>
-
-            <div class="content">
-                <h1>NINA HILLMAN</h1>
-                <p>...I am funny when I am in English (December 1st, 2022 - IG Live)</p>
-            </div>
-            <div class="credits">
-                <p>Image Credits: NiziU Official YouTube</p>
-            </div>
-
         </div>
 
         <nav class="mobile-nav">
@@ -51,25 +41,48 @@
             <a href="game.html">Game</a>
             <a href="pastevents.html">Past Events</a>
         </nav>
-
-        <div class="abdomen1">
-            <div class="flex-container">
-                <div class="flex-box1 box-profile">
-                    <a href="about.html"><button class="normButton"><span class="btspan"></span>ABOUT NINA</button></a>
+        
+        <div class="container">
+            <div id="game" class="justify-center flex-column">
+                <div id="hud">
+                    <div id="hud-item">
+                        <p class="hud-prefix">
+                            Question
+                        </p>
+                        <h1 class="hud-main-text" id="questionCounter">
+                            
+                        </h1>
+                    </div>
+                    <div id="hud-item">
+                        <p class="hud-prefix">
+                            Score
+                        </p>
+                        <h1 class="hud-main-text" id="score">
+                            0
+                        </h1>
+                    </div>
                 </div>
-                <div class="flex-box1 box-history">
-                    <a href="history.html"><button class="normButton"><span class="btspan"></span>NINA'S HISTORY</button></a>
+                <h2 id="question">What is the answer to this question?</h2>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Choice 1</p>
                 </div>
-                <div class="flex-box1 box-performance">
-                    <a href="performance.html"><button class="normButton"><span class="btspan"></span>PERFORMANCES</button></a>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
                 </div>
-                <div class="flex-box1 box-community">
-                    <a href="community.html"><button class="normButton"><span class="btspan"></span>COMMUNITY POSTS</button></a>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
                 </div>
             </div>
         </div>
-        
         <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/quizgame.js"></script>
     </body>
     <footer>
         <ul>
