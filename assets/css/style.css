@@ -3,7 +3,9 @@
     padding: 0;
 }
 :root {
-    background-color: #a6e7d9;
+    /*background-color: #a6e7d9;*/
+    /* background-color: rgba(252, 225, 255, 1); */
+    background-color: rgba(173, 232, 246, 0.5);
 }
 body{
     /*background-color: #a6e7d9*/

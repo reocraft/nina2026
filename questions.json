@@ -1,0 +1,26 @@
+[
+    {
+        "question": "This is example question 1 (A).",
+        "choice1": "Alex",
+        "choice2": "B?",
+        "choice3": "Charles",
+        "choice4": "Daniel",
+        "answer": 1
+    },
+    {
+        "question": "This is example question 2 (B).",
+        "choice1": "Esteban",
+        "choice2": "Fernando",
+        "choice3": "George",
+        "choice4": "Hamilton",
+        "answer": 2
+    },
+    {
+        "question": "This is example question 3 (C).",
+        "choice1": "Isack",
+        "choice2": "Jules",
+        "choice3": "KMag",
+        "choice4": "Lando",
+        "answer": 3
+    }
+]
