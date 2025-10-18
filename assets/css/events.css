@@ -1,0 +1,82 @@
+/* CSS for events, past events */
+
+.content-space{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /*background: rgba(2, 187, 147, 0.35);*/
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.colorframe{
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-size: 27px;
+    line-height: 2.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: auto;
+    justify-content: space-around;
+}
+.colorbox{
+    background-color: #fff;
+    border: 2px solid transparent;
+    padding: 1em;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 27px;
+    line-height: 1.4;
+    max-width: 27em;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.colorbox a{
+    text-decoration: none;
+    color: #000;
+}
+.colorbox a:hover{
+    color: #003da5;
+}
+.boxheader{
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 36px;
+}
+#colorbox1{
+    border: 4px solid #003da5;
+}
+#colorbox2{
+    border: 4px solid #f01e1e;
+}
+#colorbox3{
+    border: 4px solid #16d11f;
+}
+#colorbox4{
+    border: 4px solid #fdf907;
+}
+
+
+.poster{
+    width: 92%;
+    display: block;
+    margin: auto;
+}
+
+.stamps{
+    width: 4rem;
+}
+
+.eventheader {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.colorbox ul {
+    font-size: 3.3rem;
+    list-style: none;
+}
