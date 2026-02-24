@@ -6,6 +6,10 @@
     background-position: center;
 }
 
+.navbar.sticky{
+    background: #BAE9D0;
+}
+
 #caption{
     width: 100%;
     position: absolute;
