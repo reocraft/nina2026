@@ -11,6 +11,10 @@ window.addEventListener('DOMContentLoaded', function() {
     const minutesElement = document.getElementById('minutes');
     const secondsElement = document.getElementById('seconds');
     const countdownContainer = document.getElementById('countdown-container');
+
+    if (!daysElement || !hoursElement || !minutesElement || !secondsElement) {
+        return;
+    }
     
     function updateCountdown() {
         // Get current time in UTC
