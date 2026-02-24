@@ -1,7 +1,7 @@
 .opening{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/background.png);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(255,255,255,0.4)),url(../images/ninacover3.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -36,7 +36,10 @@
 .flex-area{
     width: 100%;
     /*background-color: #010113;*/
-    background-image: linear-gradient(to right,#010113,#09093f,#010112);
+    /* background-image: linear-gradient(to right,#010113,#09093f,#010112); */
+    /* background-image: linear-gradient(to right, #AFC8B8,#9FBFAE,#BFD8C9); */
+    background: linear-gradient(135deg, #BFD8C9, #9FBFAE);
+    /* background: linear-gradient(180deg, #A8C7B5, #E4F1E8); */
     background-size: cover;
     background-position: center;
     padding-top: 50px;
@@ -61,21 +64,21 @@
     border-radius: 80px;
     margin: 20px;
 }
-#box-profile{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/profileWall.png);
+#box-event{
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/ninasengilevent.JPG);
+    background-size: cover;
+}
+#box-ninapedia{
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/ninapediacover.png);
+    background-size: cover;
+}
+#box-game{
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/f1game.jpg);
     background-size: contain;
 }
-#box-history{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/historyNinaWall.png);
-    background-size: contain;
-}
-#box-performance{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/performanceWall.png);
-    background-size: contain;
-}
-#box-community{
-    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/communityBlur.png);
-    background-size: contain;
+#box-pastevent{
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url(../images/ninacover2.jpg);
+    background-size: cover;
 }
 
 @media only screen and (max-width: 600px){
