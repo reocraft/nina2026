@@ -1,0 +1,60 @@
+############################################
+# FORCE LATEST HTML (Prevents stale pages)
+############################################
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
+
+############################################
+# CACHE CSS & JS (Fast but Safe)
+############################################
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # CSS & JS (long cache, use versioning in filename)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+
+    # Images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+
+    # Fonts
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+############################################
+# UNITY WEBGL FIXES
+############################################
+
+# Correct MIME type for WASM
+AddType application/wasm .wasm
+
+# Gzip support for Unity builds
+<IfModule mod_mime.c>
+    AddEncoding gzip .gz
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js\.gz|data\.gz|wasm\.gz)$">
+        Header set Content-Encoding gzip
+    </FilesMatch>
+</IfModule>
+
+############################################
+# ENABLE COMPRESSION
+############################################
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
