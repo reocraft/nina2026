@@ -323,14 +323,38 @@ footer ul li a{
 
 @media only screen and (max-width: 768px){
     .tos{
-        margin: 0 60px;
+        margin: 0 20px;
+        font-size: 1.6rem;
+        line-height: 1.8;
     }
-    .colorframe{
+
+    .header{
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .subheader{
+        font-size: 2.4rem;
+        margin-top: 16px;
+    }
+
+    .description{
         width: 90%;
         margin-left: 5%;
+        font-size: 1.8rem;
+        line-height: 1.8;
     }
-    .colorbox{
-        font-size: 2.1rem;
+
+    footer{
+        font-size: 1.3rem;
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+
+    .mobile-nav a{
+        font-size: 1.6rem;
+        padding: 14px 12px;
+        margin-bottom: 18px;
     }
 }
 

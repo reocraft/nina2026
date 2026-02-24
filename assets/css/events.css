@@ -81,3 +81,38 @@
     font-size: 3.3rem;
     list-style: none;
 }
+
+@media only screen and (max-width: 768px){
+    .content-space{
+        padding-bottom: 60px;
+    }
+
+    .colorframe{
+        width: 94%;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+
+    .colorbox{
+        max-width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        padding: 0.8rem 1.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .eventheader{
+        font-size: 2.4rem;
+        padding-top: 1.6rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .colorbox ul{
+        font-size: 1.7rem;
+    }
+
+    .poster{
+        width: 100%;
+    }
+}
